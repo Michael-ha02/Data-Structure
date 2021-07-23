@@ -88,7 +88,7 @@ public class LinkedList<E> implements ListI<E>{
 
 		E tmp = head.data;
 		head = head.next;
-		--currentsize;
+		currentsize--;
 		return tmp;
 	}
 
@@ -113,7 +113,7 @@ public class LinkedList<E> implements ListI<E>{
 		}
 		tail = previous;
 		previous.next = null;
-		--currentsize; 
+		currentsize--; 
 		return current.data;
 	}
 
